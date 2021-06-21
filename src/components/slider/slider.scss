@@ -87,17 +87,17 @@
   }
 
   span.title-how-to {
-    font-size: 20px;
-    color: white;
+    font-size: 25px;
+    color: var(--colorwhite);
     text-align: center;
     display: block;
-    font-family: "Mulish", sans-serif;
+    font-family: var(--fontFamily);
   }
   p.informations {
-    font-size: 13px;
-    color: white;
+    font-size: 16px;
+    color: var(--colorwhite);
     text-align: center;
     display: block;
-    font-family: "Mulish", sans-serif;
+    font-family: var(--fontFamily);
   }
 

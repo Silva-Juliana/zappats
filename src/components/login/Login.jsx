@@ -89,7 +89,7 @@ function Login(props) {
           <form className="form-inputs">
             <Input errMsg={currentLogin.errMsg} error={currentLogin.error} onChange={changeValue} label="Users name or Email" type="text" name="name"/>
             <Input errMsg={currentPassword.errMsg} error={currentPassword.error} onChange={changePassword} label="Password" type="password" name="password"/>
-            <a className="forgot-password" href="https://www.w3schools.com">Forgot password?</a>
+            <a className="forgot-password" href="/">Forgot password?</a>
           </form>
         </div>
         <div>
