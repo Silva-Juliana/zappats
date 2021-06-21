@@ -14,7 +14,7 @@
     text-align: right;
     display: block;
     font-weight: 700;
-    margin-top: 70px;
+    margin-top: 50px;
     width: 80%;
   }
 
@@ -103,7 +103,6 @@
     }
 
     button.login-invision {
-      text-decoration: underline;
       font-size: var(--fontSize);
       color: #707070;
       display: block;
@@ -112,6 +111,10 @@
       background: transparent;
       cursor: pointer;
       font-family: var(--fontFamily);
+
+      span.span-invision {
+        text-decoration: underline;
+      }
     }
   }
 }

@@ -89,7 +89,6 @@
   }
 
   button.login-invision {
-    text-decoration: underline;
     font-size: var(--fontSize);
     color: #707070;
     display: block;
@@ -98,6 +97,9 @@
     background: transparent;
     cursor: pointer;
     font-family: var(--fontFamily);
-
+    
+    span.span-invision {
+      text-decoration: underline;
+    }
   }
 }

@@ -24,7 +24,7 @@ function CreateAccount(props) {
     errMsg: ''
   });
 
-  const changeValue = (e)=> {
+  const changeValue = (e) => {
     setCurrentLogin({
       ...currentLogin,
       value: e.currentTarget.value,
@@ -33,7 +33,7 @@ function CreateAccount(props) {
     })
   }
 
-  const changePassword = (e)=> {
+  const changePassword = (e) => {
     setCurrentPassword({
       ...currentPassword,
       value: e.currentTarget.value,
@@ -42,7 +42,7 @@ function CreateAccount(props) {
     });
   }
 
-  const changeName = (e)=> {
+  const changeName = (e) => {
     setCurrentName({
       ...currentName,
       value: e.currentTarget.value,
@@ -56,7 +56,7 @@ function CreateAccount(props) {
     const passwordValue = currentPassword.value;
     const nameValue = currentName.value;
 
-    if (!loginValue){
+    if (!loginValue) {
       setCurrentPassword({
         ...currentPassword,
         error: true,
@@ -75,27 +75,7 @@ function CreateAccount(props) {
 
       return;
     }
-    if (!passwordValue){
-      setCurrentPassword({
-        ...currentPassword,
-        error: true,
-        errMsg: 'This field cannot be empty'
-      })
-      setCurrentLogin({
-        ...currentPassword,
-        error: true,
-        errMsg: 'This field cannot be empty'
-      })
-      setCurrentName({
-        ...currentName,
-        error: true,
-        errMsg: 'This field cannot be empty'
-      })
-
-      return;
-    }
-
-    if (!nameValue){
+    if (!passwordValue) {
       setCurrentPassword({
         ...currentPassword,
         error: true,
@@ -115,14 +95,34 @@ function CreateAccount(props) {
       return;
     }
 
-    if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(loginValue)){
+    if (!nameValue) {
+      setCurrentPassword({
+        ...currentPassword,
+        error: true,
+        errMsg: 'This field cannot be empty'
+      })
+      setCurrentLogin({
+        ...currentPassword,
+        error: true,
+        errMsg: 'This field cannot be empty'
+      })
+      setCurrentName({
+        ...currentName,
+        error: true,
+        errMsg: 'This field cannot be empty'
+      })
+
+      return;
+    }
+
+    if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(loginValue)) {
       setCurrentLogin({
         ...currentPassword,
         error: true,
         errMsg: 'The e-mail is wrong'
       })
 
-      return ;
+      return;
     }
 
     if (!/\w{6,}/.test(passwordValue)) {
@@ -140,9 +140,9 @@ function CreateAccount(props) {
         <h1>Getting Started</h1>
         <div className="box-inputs">
           <form className="form-inputs">
-            <Input errMsg={currentName.errMsg} error={currentName.error} onChange={changeName} label="Full Name" type="text" name="name"/>
-            <Input errMsg={currentLogin.errMsg} error={currentLogin.error} onChange={changeValue} label="Users name or Email" type="text" name="name"/>
-            <Input errMsg={currentPassword.errMsg} error={currentPassword.error} onChange={changePassword} label="Password" type="password" name="password"/>
+            <Input errMsg={currentName.errMsg} error={currentName.error} onChange={changeName} label="Full Name" type="text" name="name" />
+            <Input errMsg={currentLogin.errMsg} error={currentLogin.error} onChange={changeValue} label="Users name or Email" type="text" name="name" />
+            <Input errMsg={currentPassword.errMsg} error={currentPassword.error} onChange={changePassword} label="Password" type="password" name="password" />
           </form>
         </div>
         <div>
@@ -160,10 +160,10 @@ function CreateAccount(props) {
           </button>
         </div>
         <p className="span-terms">
-            By signing up, you agree to Invision
-            <a className="a-terms" href="https://www.w3schools.com"> Terms of Conditions</a> and <a className="a-terms" href="https://www.w3schools.com">Privacy Policy</a>
+          By signing up, you agree to Invision
+          <a className="a-terms" href="https://www.w3schools.com"> Terms of Conditions</a> and <a className="a-terms" href="https://www.w3schools.com">Privacy Policy</a>
         </p>
-        <button className="login-invision" onClick={props.onClick}>Already on Invision? Log in</button>
+        <button className="login-invision" onClick={props.onClick}>Already on Invision? <span className='span-invision'>Log in</span></button>
       </div>
     </>
   )

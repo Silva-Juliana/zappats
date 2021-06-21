@@ -106,7 +106,7 @@ function Login(props) {
             Sign in with Google
           </button>
         </div>
-        <button className="login-invision" onClick={props.onClick}>New Invision? Create Account</button>
+        <button className="login-invision" onClick={props.onClick}>New Invision? <span className='span-invision'> Create Account</span></button>
       </div>
     </>
   )
