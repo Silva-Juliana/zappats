@@ -1,0 +1,28 @@
+.box-button-slide {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 18px;
+  left: 0;
+  right: 0;
+
+  button.button-slide {
+    height: 11px;
+    background-color: #ffffff78;
+    border: none;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: .34s all ease;
+
+    &.button-is-active {
+      height: 11px;
+      background-color: #ffffff;
+      border: none;
+      border-radius: 10px;
+      margin-right: 10px;
+      cursor: pointer;
+      width: 17px;
+    }
+  }
+}

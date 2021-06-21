@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+}
+.App {
+  display: flex;
+  height: 100vh;
+
+  @media screen and (max-width: 720px) and (min-width: 320px) {
+    flex-direction: column;
+  }
+}
+
+:root {
+  --errorColor: red;
+  
+}

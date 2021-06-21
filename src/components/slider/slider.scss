@@ -1,0 +1,103 @@
+.box-slider {
+  width: 50%;
+  height: 100%;
+  position: relative;
+
+  @media screen and (max-width: 720px) and (min-width: 320px) {
+    width: 100%;
+  }
+}
+  .container-how-to {
+    background-color: #a9c5ba;
+    background-image: url("../../images/Data.png");
+    background-size: 68%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    padding-bottom: 40px;
+    height: 100vh;
+
+    @media screen and (max-width: 720px) and (min-width: 320px) {
+      width: 100%;
+      padding-top: 300px;
+    }
+  }
+
+  .container-how-to2 {
+    background-color: #a9c5ba;
+    background-image: url("../../images/telecommuting.png");
+    background-size: 68%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    padding-bottom: 40px;
+    height: 100vh;
+
+    @media screen and (max-width: 720px) and (min-width: 320px) {
+      width: 100%;
+      padding-top: 300px;
+    }
+  }
+  .container-how-to3 {
+    background-color: #a9c5ba;
+    background-image: url("../../images/questions.png");
+    background-size: 54%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    padding-bottom: 40px;
+    height: 100vh;
+
+    @media screen and (max-width: 720px) and (min-width: 320px) {
+      width: 100%;
+      padding-top: 300px;
+    }
+  }
+
+  .container-how-to4 {
+    background-color: #a9c5ba;
+    background-image: url("../../images/analytics.png");
+    background-size: 68%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    padding-bottom: 40px;
+    height: 100vh;
+
+    @media screen and (max-width: 720px) and (min-width: 320px) {
+      width: 100%;
+      padding-top: 300px;
+    }
+  }
+
+  span.title-how-to {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    display: block;
+    font-family: "Mulish", sans-serif;
+  }
+  p.informations {
+    font-size: 13px;
+    color: white;
+    text-align: center;
+    display: block;
+    font-family: "Mulish", sans-serif;
+  }
+
